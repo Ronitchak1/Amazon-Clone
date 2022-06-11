@@ -1,6 +1,7 @@
 import React from 'react'
 import '../styles/Product.css';
 import {useStateValue} from "./StateProvider";
+import StarIcon from '@mui/icons-material/Star';
 
 function Product({id, title, image, price, rating}) {
 
@@ -32,7 +33,7 @@ function Product({id, title, image, price, rating}) {
                 {Array(rating)
                 .fill()
                 .map((_, i) => (
-                    <p>*</p>
+                    <StarIcon/>
                 ))}
             </div>
         </div>

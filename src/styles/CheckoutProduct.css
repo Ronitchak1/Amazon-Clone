@@ -14,6 +14,8 @@
     margin-top: 10px;
     border-color: #a88734;
     color: #111;
+    height: 30px;
+    width: 100%;
 }
 
 .checkoutProduct__image{
