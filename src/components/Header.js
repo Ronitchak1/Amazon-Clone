@@ -42,7 +42,7 @@ export default function Header() {
             <span
               className='header__optionLineOne'
             >  
-            {state.user ? state.user?.email : 'Hello Guest'}
+            Hello {state.user ? state.user?.email : 'Guest'}
             </span>
 
             <span

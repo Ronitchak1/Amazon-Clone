@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/Header';
 import Home from './components/Home';
 import Checkout from './components/Checkout';
+import Payment from "./components/Payment";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Login from "./components/Login";
 import { auth } from "./firebase";
@@ -40,6 +41,7 @@ export default function App() {
         <Route path="/login" element={<LoginPage/>}/>
         <Route path="/" element={<HomePage/>} /> 
         <Route path="/checkout" element={<CheckoutPage/>} /> 
+        <Route path="/payment" element={<PaymentPage/>}/>
       </Routes>
     </div>
     </Router>
@@ -68,6 +70,15 @@ const CheckoutPage = () => {
     <>
       <Header/>
       <Checkout/>
+    </>
+  );
+}
+
+const PaymentPage = () =>{
+  return (
+    <>
+      <Header/>
+      <Payment/>
     </>
   );
 }
